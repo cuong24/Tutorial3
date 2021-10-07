@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 rootProject.name = "Tutorial3"
 include ':app'
 include ':part2'
+include ':part3'
