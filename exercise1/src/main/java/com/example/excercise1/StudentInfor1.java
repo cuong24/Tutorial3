@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -32,7 +33,7 @@ public class StudentInfor1 extends AppCompatActivity {
         }
 
 
-        EditText editText = (EditText) findViewById(R.id.ageInput);
+        TextView dob = (TextView) findViewById(R.id.ageInput);
         DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
 
             @Override
@@ -47,7 +48,7 @@ public class StudentInfor1 extends AppCompatActivity {
 
         };
 
-        editText.setOnClickListener(new View.OnClickListener() {
+        dob.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick (View v){
@@ -58,14 +59,11 @@ public class StudentInfor1 extends AppCompatActivity {
             }
         });
 
-        editText.setRawInputType(InputType.TYPE_CLASS_TEXT);
-        editText.setTextIsSelectable(true);
-
     }
 
     private void updateLabel() {
 
-        EditText editText = (EditText) findViewById(R.id.ageInput);
+        TextView editText = (TextView) findViewById(R.id.ageInput);
         String myFormat = "MM/dd/yy"; //In which you need put here
         SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
 
