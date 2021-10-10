@@ -75,44 +75,20 @@
                     android:id="@+id/Marketing"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Marketing" />
+                    android:text="100% free" />
 
                 <RadioButton
                     android:id="@+id/ProfComm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Prof Comm" />
+                    android:text="Tuition free" />
 
                 <RadioButton
                     android:id="@+id/SoftwareEng"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Software Eng." />
-
-                <RadioButton
-                    android:id="@+id/IT"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="IT" />
+                    android:text="Acc free" />
             </RadioGroup>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <CheckBox
-                android:id="@+id/specialNeeds"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Special Needs" />
-
-            <CheckBox
-                android:id="@+id/scholarship"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Scholarship" />
-
         </TableRow>
 
         <TableRow
@@ -120,10 +96,11 @@
             android:layout_height="match_parent" >
 
             <Button
-                android:id="@+id/saveButton"
+                android:id="@+id/submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Save" />
+                android:text="Submit"
+                android:onClick="onButtonClick"/>
         </TableRow>
 
     </TableLayout>

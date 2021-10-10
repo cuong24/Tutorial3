@@ -12,6 +12,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,5 +54,15 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("name", name.getText().toString());
 
         startActivityForResult(intent, 1);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent intent){
+        super.onActivityResult(requestCode, resultCode, intent);
+        if (requestCode == 1 && resultCode == RESULT_OK){
+            String successMessage = (String) intent.getExtras().get("response");
+            EditText name = (EditText) findViewById(R.id.nameInput);
+            name.setText(successMessage);
+        }
     }
 }
