@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentInfor1">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/nameInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOB"
+                />
+
+            <EditText
+                android:id="@+id/ageInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="243dp">
+
+            <TextView
+                android:id="@+id/programText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Program" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/programRadioGroup">
+
+                <RadioButton
+                    android:id="@+id/Marketing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Marketing" />
+
+                <RadioButton
+                    android:id="@+id/ProfComm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prof Comm" />
+
+                <RadioButton
+                    android:id="@+id/SoftwareEng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Software Eng." />
+
+                <RadioButton
+                    android:id="@+id/IT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IT" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/specialNeeds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Special Needs" />
+
+            <CheckBox
+                android:id="@+id/scholarship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scholarship" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
